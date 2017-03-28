@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		449929C31E89EF6C00A33754 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929C21E89EF6C00A33754 /* main.swift */; };
 		449929CA1E89F3EB00A33754 /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929C91E89F3EB00A33754 /* Anime.swift */; };
+		449929CC1E89F5D500A33754 /* JSONDecodeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929CB1E89F5D500A33754 /* JSONDecodeError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,7 @@
 		449929BF1E89EF6C00A33754 /* AnnictAPIClient */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AnnictAPIClient; sourceTree = BUILT_PRODUCTS_DIR; };
 		449929C21E89EF6C00A33754 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		449929C91E89F3EB00A33754 /* Anime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Anime.swift; sourceTree = "<group>"; };
+		449929CB1E89F5D500A33754 /* JSONDecodeError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecodeError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				449929C21E89EF6C00A33754 /* main.swift */,
 				449929C91E89F3EB00A33754 /* Anime.swift */,
+				449929CB1E89F5D500A33754 /* JSONDecodeError.swift */,
 			);
 			path = AnnictAPIClient;
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 			files = (
 				449929CA1E89F3EB00A33754 /* Anime.swift in Sources */,
 				449929C31E89EF6C00A33754 /* main.swift in Sources */,
+				449929CC1E89F5D500A33754 /* JSONDecodeError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
