@@ -38,4 +38,15 @@ extension AnnictRequest {
 
         return urlRequest
     }
+
+    func response(from data: Data, urlResponse: URLResponse) throws -> Response {
+        //取得したデータをJSONに変換
+        let json = try JSONSerialization.jsonObject(with: data, options: [])
+
+        if case (200..<300)? = (urlResponse as? HTTPURLResponse)?.statusCode {
+            return try Response(json: json)
+        } else {
+            throw try AnnictAPIError(json: json)
+        }
+    }
 }

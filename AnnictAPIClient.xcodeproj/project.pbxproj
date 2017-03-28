@@ -75,13 +75,10 @@
 		449929C11E89EF6C00A33754 /* AnnictAPIClient */ = {
 			isa = PBXGroup;
 			children = (
+				449929DD1E8A804F00A33754 /* Response */,
 				449929D61E8A64E400A33754 /* Request */,
 				449929D11E8A00F700A33754 /* Error */,
 				449929C21E89EF6C00A33754 /* main.swift */,
-				449929C91E89F3EB00A33754 /* Anime.swift */,
-				449929CF1E89FCD700A33754 /* SearchWorksResponse.swift */,
-				449929CB1E89F5D500A33754 /* JSONDecodeError.swift */,
-				449929CD1E89FA4500A33754 /* JSONDecodable.swift */,
 			);
 			path = AnnictAPIClient;
 			sourceTree = "<group>";
@@ -103,6 +100,17 @@
 				449929DB1E8A73C100A33754 /* AnnictAPI.swift */,
 			);
 			name = Request;
+			sourceTree = "<group>";
+		};
+		449929DD1E8A804F00A33754 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				449929C91E89F3EB00A33754 /* Anime.swift */,
+				449929CF1E89FCD700A33754 /* SearchWorksResponse.swift */,
+				449929CB1E89F5D500A33754 /* JSONDecodeError.swift */,
+				449929CD1E89FA4500A33754 /* JSONDecodable.swift */,
+			);
+			name = Response;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
