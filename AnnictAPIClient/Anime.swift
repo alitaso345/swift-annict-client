@@ -1,4 +1,6 @@
-struct Anime {
+import Foundation
+
+struct Anime : JSONDecodable {
     let id: Int
     let title: String
     let title_kana: String
