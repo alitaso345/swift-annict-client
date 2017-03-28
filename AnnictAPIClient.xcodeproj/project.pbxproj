@@ -17,6 +17,8 @@
 		449929D81E8A659200A33754 /* AnnictRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929D71E8A659200A33754 /* AnnictRequest.swift */; };
 		449929DA1E8A668D00A33754 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929D91E8A668D00A33754 /* HTTPMethod.swift */; };
 		449929DC1E8A73C100A33754 /* AnnictAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929DB1E8A73C100A33754 /* AnnictAPI.swift */; };
+		449929DF1E8A834E00A33754 /* AnnictClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929DE1E8A834E00A33754 /* AnnictClient.swift */; };
+		449929E11E8A851F00A33754 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929E01E8A851F00A33754 /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +45,8 @@
 		449929D71E8A659200A33754 /* AnnictRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnictRequest.swift; sourceTree = "<group>"; };
 		449929D91E8A668D00A33754 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		449929DB1E8A73C100A33754 /* AnnictAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnictAPI.swift; sourceTree = "<group>"; };
+		449929DE1E8A834E00A33754 /* AnnictClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnictClient.swift; sourceTree = "<group>"; };
+		449929E01E8A851F00A33754 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				449929D71E8A659200A33754 /* AnnictRequest.swift */,
 				449929D91E8A668D00A33754 /* HTTPMethod.swift */,
 				449929DB1E8A73C100A33754 /* AnnictAPI.swift */,
+				449929DE1E8A834E00A33754 /* AnnictClient.swift */,
+				449929E01E8A851F00A33754 /* Result.swift */,
 			);
 			name = Request;
 			sourceTree = "<group>";
@@ -177,7 +183,9 @@
 				449929D01E89FCD700A33754 /* SearchWorksResponse.swift in Sources */,
 				449929D81E8A659200A33754 /* AnnictRequest.swift in Sources */,
 				449929DA1E8A668D00A33754 /* HTTPMethod.swift in Sources */,
+				449929E11E8A851F00A33754 /* Result.swift in Sources */,
 				449929D51E8A02DA00A33754 /* AnnictAPIError.swift in Sources */,
+				449929DF1E8A834E00A33754 /* AnnictClient.swift in Sources */,
 				449929DC1E8A73C100A33754 /* AnnictAPI.swift in Sources */,
 				449929D31E8A016C00A33754 /* AnnictClientError.swift in Sources */,
 				449929CE1E89FA4500A33754 /* JSONDecodable.swift in Sources */,
