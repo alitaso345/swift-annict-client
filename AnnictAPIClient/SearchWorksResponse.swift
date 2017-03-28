@@ -1,4 +1,4 @@
-struct SearchWorks : JSONDecodable {
+struct SearchWorksResponse : JSONDecodable {
     let total_count: Int
     let next_page: Int?
     let prev_page: Int?

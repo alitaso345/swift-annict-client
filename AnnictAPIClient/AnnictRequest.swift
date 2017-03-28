@@ -1,6 +1,8 @@
 import Foundation
 
 protocol AnnictRequest {
+    associatedtype Response: JSONDecodable
+
     var baseURL: URL { get }
     var path: String { get }
     var method: HTTPMethod { get }
