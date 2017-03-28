@@ -14,6 +14,7 @@
 		449929D01E89FCD700A33754 /* SearchWorks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929CF1E89FCD700A33754 /* SearchWorks.swift */; };
 		449929D31E8A016C00A33754 /* AnnictClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929D21E8A016C00A33754 /* AnnictClientError.swift */; };
 		449929D51E8A02DA00A33754 /* AnnictAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929D41E8A02DA00A33754 /* AnnictAPIError.swift */; };
+		449929D81E8A659200A33754 /* AnnictRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929D71E8A659200A33754 /* AnnictRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,7 @@
 		449929CF1E89FCD700A33754 /* SearchWorks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchWorks.swift; sourceTree = "<group>"; };
 		449929D21E8A016C00A33754 /* AnnictClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnictClientError.swift; sourceTree = "<group>"; };
 		449929D41E8A02DA00A33754 /* AnnictAPIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnictAPIError.swift; sourceTree = "<group>"; };
+		449929D71E8A659200A33754 /* AnnictRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnictRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		449929C11E89EF6C00A33754 /* AnnictAPIClient */ = {
 			isa = PBXGroup;
 			children = (
+				449929D61E8A64E400A33754 /* Request */,
 				449929D11E8A00F700A33754 /* Error */,
 				449929C21E89EF6C00A33754 /* main.swift */,
 				449929C91E89F3EB00A33754 /* Anime.swift */,
@@ -86,6 +89,14 @@
 				449929D41E8A02DA00A33754 /* AnnictAPIError.swift */,
 			);
 			name = Error;
+			sourceTree = "<group>";
+		};
+		449929D61E8A64E400A33754 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				449929D71E8A659200A33754 /* AnnictRequest.swift */,
+			);
+			name = Request;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +161,7 @@
 				449929C31E89EF6C00A33754 /* main.swift in Sources */,
 				449929CC1E89F5D500A33754 /* JSONDecodeError.swift in Sources */,
 				449929D01E89FCD700A33754 /* SearchWorks.swift in Sources */,
+				449929D81E8A659200A33754 /* AnnictRequest.swift in Sources */,
 				449929D51E8A02DA00A33754 /* AnnictAPIError.swift in Sources */,
 				449929D31E8A016C00A33754 /* AnnictClientError.swift in Sources */,
 				449929CE1E89FA4500A33754 /* JSONDecodable.swift in Sources */,
