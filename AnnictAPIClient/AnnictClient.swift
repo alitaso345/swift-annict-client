@@ -6,12 +6,18 @@ class AnnictClient {
         let session = URLSession(configuration: configuration)
         return session
     }()
+    let accessToken: String
+
+    init(accessToken: String) {
+        self.accessToken = accessToken
+    }
 
     func send<Request : AnnictRequest>(
         request: Request,
         completion: @escaping (Result<Request.Response, AnnictClientError>) -> Void) {
 
-        let urlRequest = request.buildURLRequest()
+        var urlRequest = request.buildURLRequest()
+        urlRequest.addValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
         let task = session.dataTask(with: urlRequest) {
             data, response, error in
 
