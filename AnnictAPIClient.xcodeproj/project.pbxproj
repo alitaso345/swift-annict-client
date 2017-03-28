@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		449929C31E89EF6C00A33754 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929C21E89EF6C00A33754 /* main.swift */; };
+		449929CA1E89F3EB00A33754 /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929C91E89F3EB00A33754 /* Anime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		449929BF1E89EF6C00A33754 /* AnnictAPIClient */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AnnictAPIClient; sourceTree = BUILT_PRODUCTS_DIR; };
 		449929C21E89EF6C00A33754 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		449929C91E89F3EB00A33754 /* Anime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Anime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				449929C21E89EF6C00A33754 /* main.swift */,
+				449929C91E89F3EB00A33754 /* Anime.swift */,
 			);
 			path = AnnictAPIClient;
 			sourceTree = "<group>";
@@ -120,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				449929CA1E89F3EB00A33754 /* Anime.swift in Sources */,
 				449929C31E89EF6C00A33754 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
