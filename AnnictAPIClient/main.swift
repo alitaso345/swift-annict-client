@@ -16,9 +16,13 @@ client.send(request: request) { result in
         for work in response.works {
             print(work.title)
         }
-        //exit(0)
+        exit(0)
     case let .failure(error):
         print(error)
         exit(1)
     }
 }
+
+let timeoutTimeInterval: TimeInterval = 60
+Thread.sleep(forTimeInterval: timeoutTimeInterval)
+exit(1)

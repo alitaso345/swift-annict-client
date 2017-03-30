@@ -15,16 +15,16 @@ struct SearchWorksResponse : JSONDecodable {
                 actualValue: dictionary["total_count"])
         }
 
-        guard let next_page = dictionary["next_page"] as? Int else {
-            throw JSONDecodeError.missingValue(
-                key: "next_page",
-                actualValue: dictionary["next_page"])
+        if let next_page = dictionary["next_page"] as? Int {
+            self.next_page = next_page
+        } else {
+            self.next_page = nil
         }
 
-        guard let prev_page = dictionary["prev_page"] as? Int else {
-            throw JSONDecodeError.missingValue(
-                key: "prev_page",
-                actualValue: dictionary["prev_page"])
+        if let prev_page = dictionary["prev_page"] as? Int {
+            self.prev_page = prev_page
+        } else {
+            self.prev_page = nil
         }
 
         guard let workObjects = dictionary["works"] as? [Any] else {
@@ -38,8 +38,6 @@ struct SearchWorksResponse : JSONDecodable {
         }
 
         self.total_count = total_count
-        self.next_page = next_page
-        self.prev_page = prev_page
         self.works = works
     }
 }

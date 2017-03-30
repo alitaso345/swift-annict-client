@@ -54,7 +54,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AnnictAPIClient/main.swift"
@@ -65,14 +65,14 @@
             endingLineNumber = "12">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "main"
                   moduleName = "AnnictAPIClient"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/arisu-maruyama/work/AnnictAPIClient/AnnictAPIClient/main.swift"
-                  timestampString = "512397907.146385"
+                  timestampString = "512557218.683483"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
@@ -80,14 +80,14 @@
                   offsetFromSymbolStart = "653">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "AnnictAPIClient.(closure #1)"
                   moduleName = "AnnictAPIClient"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/arisu-maruyama/work/AnnictAPIClient/AnnictAPIClient/main.swift"
-                  timestampString = "512397907.1482"
+                  timestampString = "512557218.685373"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
