@@ -16,7 +16,9 @@ struct Record : JSONDecodable {
         }
 
         guard let id = dictionary["id"] as? Int else {
-            throw JSONDecodeError.missingValue(key: "id", actualValue: dictionary["id"])
+            throw JSONDecodeError.missingValue(
+                key: "id",
+                actualValue: dictionary["id"])
         }
 
         if let comment = dictionary["comment"] as? String {
@@ -33,27 +35,39 @@ struct Record : JSONDecodable {
         }
 
         guard let isModified = dictionary["is_modified"] as? Bool else {
-            throw JSONDecodeError.missingValue(key: "is_modified", actualValue: dictionary["is_modified"])
+            throw JSONDecodeError.missingValue(
+                key: "is_modified",
+                actualValue: dictionary["is_modified"])
         }
 
         guard let likesCount = dictionary["likes_count"] as? Int else {
-            throw JSONDecodeError.missingValue(key: "likes_count", actualValue: dictionary["likes_count"])
+            throw JSONDecodeError.missingValue(
+                key: "likes_count",
+                actualValue: dictionary["likes_count"])
         }
 
         guard let commentsCount = dictionary["comments_count"] as? Int else {
-            throw JSONDecodeError.missingValue(key: "comments_count", actualValue: dictionary["comments_count"])
+            throw JSONDecodeError.missingValue(
+                key: "comments_count",
+                actualValue: dictionary["comments_count"])
         }
 
         guard let createdAt = dictionary["created_at"] as? String else {
-            throw JSONDecodeError.missingValue(key: "created_at", actualValue: dictionary["created_at"])
+            throw JSONDecodeError.missingValue(
+                key: "created_at",
+                actualValue: dictionary["created_at"])
         }
 
         guard let userObject = dictionary["user"] else {
-            throw JSONDecodeError.missingValue(key: "user", actualValue: dictionary["user"])
+            throw JSONDecodeError.missingValue(
+                key: "user",
+                actualValue: dictionary["user"])
         }
 
         guard let workObject = dictionary["work"] else {
-            throw JSONDecodeError.missingValue(key: "work", actualValue: dictionary["work"])
+            throw JSONDecodeError.missingValue(
+                key: "work",
+                actualValue: dictionary["work"])
         }
 
         if let episodeObject = dictionary["episode"] {
@@ -61,7 +75,9 @@ struct Record : JSONDecodable {
             episodeJSON?["work"] = workObject
             self.episode = try Episode(json: episodeJSON as Any)
         } else {
-            throw JSONDecodeError.missingValue(key: "episode", actualValue: dictionary["episode"])
+            throw JSONDecodeError.missingValue(
+                key: "episode",
+                actualValue: dictionary["episode"])
         }
 
         self.id = id
