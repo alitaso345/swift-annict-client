@@ -8,12 +8,12 @@ guard let annictAccessToken = readLine(strippingNewline: true) else {
 }
 
 let client = AnnictClient(accessToken: annictAccessToken)
-let request = AnnictAPI.SearchWorks()
+let request = AnnictAPI.SearchEpisodes()
 
 client.send(request: request) { result in
     switch result {
     case let .success(response):
-        for work in response.works {
+        for work in response.episodes {
             print(work.title)
         }
         exit(0)

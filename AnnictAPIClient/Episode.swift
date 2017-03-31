@@ -48,7 +48,7 @@ struct Episode : JSONDecodable {
             throw JSONDecodeError.missingValue(key: "record_comment_count", actualValue: dictinary["record_comments_count"])
         }
 
-        guard let work = dictinary["work"] as? Anime else {
+        guard let workObject = dictinary["work"] else {
             throw JSONDecodeError.missingValue(key: "work", actualValue: dictinary["work"])
         }
 
@@ -58,6 +58,6 @@ struct Episode : JSONDecodable {
         self.title = title
         self.recordsCount = recordsCount
         self.recordCommentsCount = recordCommentsCount
-        self.work = work
+        self.work = try Anime(json: workObject)
     }
 }
