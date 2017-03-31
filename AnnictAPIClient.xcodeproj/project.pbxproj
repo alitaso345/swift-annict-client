@@ -19,6 +19,7 @@
 		449929DC1E8A73C100A33754 /* AnnictAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929DB1E8A73C100A33754 /* AnnictAPI.swift */; };
 		449929DF1E8A834E00A33754 /* AnnictClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929DE1E8A834E00A33754 /* AnnictClient.swift */; };
 		449929E11E8A851F00A33754 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929E01E8A851F00A33754 /* Result.swift */; };
+		44A99CE11E8E129000CF1C30 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A99CE01E8E129000CF1C30 /* Episode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +48,7 @@
 		449929DB1E8A73C100A33754 /* AnnictAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnictAPI.swift; sourceTree = "<group>"; };
 		449929DE1E8A834E00A33754 /* AnnictClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnictClient.swift; sourceTree = "<group>"; };
 		449929E01E8A851F00A33754 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		44A99CE01E8E129000CF1C30 /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				449929CF1E89FCD700A33754 /* SearchWorksResponse.swift */,
 				449929CB1E89F5D500A33754 /* JSONDecodeError.swift */,
 				449929CD1E89FA4500A33754 /* JSONDecodable.swift */,
+				44A99CE01E8E129000CF1C30 /* Episode.swift */,
 			);
 			name = Response;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				449929D81E8A659200A33754 /* AnnictRequest.swift in Sources */,
 				449929DA1E8A668D00A33754 /* HTTPMethod.swift in Sources */,
 				449929E11E8A851F00A33754 /* Result.swift in Sources */,
+				44A99CE11E8E129000CF1C30 /* Episode.swift in Sources */,
 				449929D51E8A02DA00A33754 /* AnnictAPIError.swift in Sources */,
 				449929DF1E8A834E00A33754 /* AnnictClient.swift in Sources */,
 				449929DC1E8A73C100A33754 /* AnnictAPI.swift in Sources */,
@@ -318,6 +322,7 @@
 				449929C81E89EF6C00A33754 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
