@@ -8,7 +8,7 @@ guard let annictAccessToken = readLine(strippingNewline: true) else {
 }
 
 let client = AnnictClient(accessToken: annictAccessToken)
-let request = AnnictAPI.SearchUsers()
+let request = AnnictAPI.SearchFollowers()
 
 client.send(request: request) { result in
     switch result {

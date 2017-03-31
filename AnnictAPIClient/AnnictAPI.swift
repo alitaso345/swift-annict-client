@@ -62,4 +62,36 @@ final class AnnictAPI {
             return nil
         }
     }
+
+    struct SearchFollowingUsers : AnnictRequest {
+        typealias Response = SearchUsersResponse
+
+        var method: HTTPMethod {
+            return .get
+        }
+
+        var path: String {
+            return "/following"
+        }
+
+        var parameters: Any? {
+            return nil
+        }
+    }
+
+    struct SearchFollowers : AnnictRequest {
+        typealias Response = SearchUsersResponse
+
+        var method: HTTPMethod {
+            return .get
+        }
+
+        var path: String {
+            return "/followers"
+        }
+
+        var parameters: Any? {
+            return nil
+        }
+    }
 }
