@@ -23,6 +23,7 @@
 		44A99CE31E8E26A900CF1C30 /* SearchEpisodesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A99CE21E8E26A900CF1C30 /* SearchEpisodesResponse.swift */; };
 		44A99CE51E8E551200CF1C30 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A99CE41E8E551200CF1C30 /* Record.swift */; };
 		44A99CE81E8E5A9600CF1C30 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A99CE71E8E5A9600CF1C30 /* User.swift */; };
+		44A99CEA1E8E5E2800CF1C30 /* SearchRecordsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A99CE91E8E5E2800CF1C30 /* SearchRecordsResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +56,7 @@
 		44A99CE21E8E26A900CF1C30 /* SearchEpisodesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchEpisodesResponse.swift; sourceTree = "<group>"; };
 		44A99CE41E8E551200CF1C30 /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		44A99CE71E8E5A9600CF1C30 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		44A99CE91E8E5E2800CF1C30 /* SearchRecordsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchRecordsResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			children = (
 				449929CF1E89FCD700A33754 /* SearchWorksResponse.swift */,
 				44A99CE21E8E26A900CF1C30 /* SearchEpisodesResponse.swift */,
+				44A99CE91E8E5E2800CF1C30 /* SearchRecordsResponse.swift */,
 			);
 			name = SearchResponse;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				449929D01E89FCD700A33754 /* SearchWorksResponse.swift in Sources */,
 				449929D81E8A659200A33754 /* AnnictRequest.swift in Sources */,
 				449929DA1E8A668D00A33754 /* HTTPMethod.swift in Sources */,
+				44A99CEA1E8E5E2800CF1C30 /* SearchRecordsResponse.swift in Sources */,
 				449929E11E8A851F00A33754 /* Result.swift in Sources */,
 				44A99CE11E8E129000CF1C30 /* Episode.swift in Sources */,
 				449929D51E8A02DA00A33754 /* AnnictAPIError.swift in Sources */,

@@ -1,10 +1,10 @@
 struct Record : JSONDecodable {
     let id: Int
-    let commnet: String
+    let comment: String?
     let rating: Int?
     let isModified: Bool
     let likesCount: Int
-    let commnetsCount: Int
+    let commentsCount: Int
     let createdAt: String
     let user: User
     let work: Work
@@ -19,9 +19,12 @@ struct Record : JSONDecodable {
             throw JSONDecodeError.missingValue(key: "id", actualValue: dictionary["id"])
         }
 
-        guard let commnet = dictionary["comment"] as? String else {
-            throw JSONDecodeError.missingValue(key: "comment", actualValue: dictionary["comment"])
+        if let comment = dictionary["comment"] as? String {
+            self.comment = comment
+        } else {
+            self.comment = nil
         }
+
 
         if let rating = dictionary["rating"] as? Int {
             self.rating = rating
@@ -37,7 +40,7 @@ struct Record : JSONDecodable {
             throw JSONDecodeError.missingValue(key: "likes_count", actualValue: dictionary["likes_count"])
         }
 
-        guard let commnetsCount = dictionary["comments_count"] as? Int else {
+        guard let commentsCount = dictionary["comments_count"] as? Int else {
             throw JSONDecodeError.missingValue(key: "comments_count", actualValue: dictionary["comments_count"])
         }
 
@@ -53,18 +56,21 @@ struct Record : JSONDecodable {
             throw JSONDecodeError.missingValue(key: "work", actualValue: dictionary["work"])
         }
 
-        guard let episodeObject = dictionary["episode"] else {
+        if let episodeObject = dictionary["episode"] {
+            var episodeJSON = episodeObject as? [String : Any]
+            episodeJSON?["work"] = workObject
+            self.episode = try Episode(json: episodeJSON as Any)
+        } else {
             throw JSONDecodeError.missingValue(key: "episode", actualValue: dictionary["episode"])
         }
 
         self.id = id
-        self.commnet = commnet
         self.isModified = isModified
         self.likesCount = likesCount
-        self.commnetsCount = commnetsCount
+        self.commentsCount = commentsCount
         self.createdAt = createdAt
         self.user = try User(json: userObject)
         self.work = try Work(json: workObject)
-        self.episode = try Episode(json: episodeObject)
+
     }
 }
