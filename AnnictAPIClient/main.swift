@@ -8,16 +8,13 @@ guard let annictAccessToken = readLine(strippingNewline: true) else {
 }
 
 let client = AnnictClient(accessToken: annictAccessToken)
-let request = AnnictAPI.SearchRecords()
+let request = AnnictAPI.SearchUsers()
 
 client.send(request: request) { result in
     switch result {
     case let .success(response):
-        for work in response.records {
-            if let comment = work.comment {
-                print(comment)
-            }
-
+        for work in response.users {
+            print(work.userName)
         }
         exit(0)
     case let .failure(error):

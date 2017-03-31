@@ -46,4 +46,20 @@ final class AnnictAPI {
             return nil
         }
     }
+
+    struct SearchUsers : AnnictRequest {
+        typealias Response = SearchUsersResponse
+
+        var method: HTTPMethod {
+            return .get
+        }
+
+        var path: String {
+            return "/users"
+        }
+
+        var parameters: Any? {
+            return nil
+        }
+    }
 }
