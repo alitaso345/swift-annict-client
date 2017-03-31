@@ -118,20 +118,6 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AnnictAPIClient/main.swift"
-            timestampString = "512651078.933976"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AnnictAPIClient/main.swift"
             timestampString = "512397724.15525"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"

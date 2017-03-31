@@ -110,4 +110,20 @@ final class AnnictAPI {
             return nil
         }
     }
+
+    struct SearchProfile : AnnictRequest {
+        typealias Response = Profile
+
+        var method: HTTPMethod {
+            return .get
+        }
+
+        var path: String {
+            return "/me"
+        }
+
+        var parameters: Any? {
+            return nil
+        }
+    }
 }
