@@ -19,20 +19,28 @@ extension AnnictRequest {
         var components = URLComponents(
             url: url,
             resolvingAgainstBaseURL: true)
+        var urlRequest = URLRequest(url: url)
 
         switch method {
-        case .get:
+        case .get :
             let dictionary = parameters as? [String : Any]
             let queryItems = dictionary?.map { key, value in
                 return URLQueryItem(
                     name: key, value: String(describing: value))
             }
             components?.queryItems = queryItems
-        default:
-            fatalError("Unsupported method \(method)")
+        case .post:
+            let dictionary = parameters as? [String : Any]
+            urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            do {
+                urlRequest.httpBody = try JSONSerialization.data(
+                    withJSONObject: dictionary!, options: [])
+            } catch {
+                print("http body error: \(error)")
+            }
         }
 
-        var urlRequest = URLRequest(url: url)
+
         urlRequest.url = components?.url
         urlRequest.httpMethod = method.rawValue
 
@@ -40,10 +48,17 @@ extension AnnictRequest {
     }
 
     func response(from data: Data, urlResponse: URLResponse) throws -> Response {
+        let statusCode = (urlResponse as? HTTPURLResponse)?.statusCode
+
+        //POSTしたとき必ずJSONへの変換でコケるのでその前に処理をする
+        if case (200..<300)? = statusCode, self.method == HTTPMethod.post {
+            return try Response(json: ["statusCode": statusCode])
+        }
+
         //取得したデータをJSONに変換
         let json = try JSONSerialization.jsonObject(with: data, options: [])
 
-        if case (200..<300)? = (urlResponse as? HTTPURLResponse)?.statusCode {
+        if case (200..<300)? = statusCode {
             return try Response(json: json)
         } else {
             throw try AnnictAPIError(json: json)

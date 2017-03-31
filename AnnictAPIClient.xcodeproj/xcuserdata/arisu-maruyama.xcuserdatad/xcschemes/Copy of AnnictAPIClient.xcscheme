@@ -63,7 +63,7 @@
       </BuildableProductRunnable>
       <EnvironmentVariables>
          <EnvironmentVariable
-            key = "annict_access_token"
+            key = "ANNICT_ACCESS_TOKEN"
             value = "ac0d435918d24abf96111fadd566dd303dba7b5a1781a4022280b48034742c77"
             isEnabled = "YES">
          </EnvironmentVariable>

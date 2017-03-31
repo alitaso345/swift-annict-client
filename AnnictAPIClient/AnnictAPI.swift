@@ -174,4 +174,26 @@ final class AnnictAPI {
             return nil
         }
     }
+
+    struct UpdateStatus : AnnictRequest {
+        typealias Response = UpdateStatusResponse
+
+        let workId: Int
+        let kind: String
+
+        var method: HTTPMethod {
+            return .post
+        }
+
+        var path: String {
+            return "/me/statuses"
+        }
+
+        var parameters: Any? {
+            return [
+                "work_id": workId,
+                "kind": kind
+            ]
+        }
+    }
 }

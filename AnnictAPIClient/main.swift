@@ -1,21 +1,20 @@
 import Foundation
 
 print("Annict Client")
-print("Enter your annict access token> ", terminator: "")
 
-guard let annictAccessToken = readLine(strippingNewline: true) else {
-    exit(1)
-}
+let token = ProcessInfo.processInfo.environment["ANNICT_ACCESS_TOKEN"]
+print(token!)
 
-let client = AnnictClient(accessToken: annictAccessToken)
-let request = AnnictAPI.FollowingActivities()
+let client = AnnictClient(accessToken: token!)
+let request = AnnictAPI.UpdateStatus(
+    workId: 4726,
+    //kind: "stop_watching")
+    kind: "watching")
 
 client.send(request: request) { result in
     switch result {
     case let .success(response):
-        for activity in response.activities {
-            print(activity.id, activity.work.title)
-        }
+        print(response)
         exit(0)
     case let .failure(error):
         print(error)
