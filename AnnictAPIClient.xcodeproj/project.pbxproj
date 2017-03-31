@@ -20,6 +20,7 @@
 		449929DF1E8A834E00A33754 /* AnnictClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929DE1E8A834E00A33754 /* AnnictClient.swift */; };
 		449929E11E8A851F00A33754 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929E01E8A851F00A33754 /* Result.swift */; };
 		44A99CE11E8E129000CF1C30 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A99CE01E8E129000CF1C30 /* Episode.swift */; };
+		44A99CE31E8E26A900CF1C30 /* SearchEpisodesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A99CE21E8E26A900CF1C30 /* SearchEpisodesResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,7 @@
 		449929DE1E8A834E00A33754 /* AnnictClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnictClient.swift; sourceTree = "<group>"; };
 		449929E01E8A851F00A33754 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		44A99CE01E8E129000CF1C30 /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		44A99CE21E8E26A900CF1C30 /* SearchEpisodesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchEpisodesResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				449929CB1E89F5D500A33754 /* JSONDecodeError.swift */,
 				449929CD1E89FA4500A33754 /* JSONDecodable.swift */,
 				44A99CE01E8E129000CF1C30 /* Episode.swift */,
+				44A99CE21E8E26A900CF1C30 /* SearchEpisodesResponse.swift */,
 			);
 			name = Response;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44A99CE31E8E26A900CF1C30 /* SearchEpisodesResponse.swift in Sources */,
 				449929CA1E89F3EB00A33754 /* Anime.swift in Sources */,
 				449929C31E89EF6C00A33754 /* main.swift in Sources */,
 				449929CC1E89F5D500A33754 /* JSONDecodeError.swift in Sources */,
