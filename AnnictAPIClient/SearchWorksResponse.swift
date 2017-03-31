@@ -2,7 +2,7 @@ struct SearchWorksResponse : JSONDecodable {
     let total_count: Int
     let next_page: Int?
     let prev_page: Int?
-    let works: [Anime]
+    let works: [Work]
 
     init(json: Any) throws {
         guard let dictionary = json as? [String : Any] else {
@@ -34,7 +34,7 @@ struct SearchWorksResponse : JSONDecodable {
         }
 
         let works = try workObjects.map {
-            return try Anime(json: $0)
+            return try Work(json: $0)
         }
 
         self.total_count = total_count

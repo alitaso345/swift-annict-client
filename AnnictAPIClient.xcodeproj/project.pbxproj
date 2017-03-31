@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		449929C31E89EF6C00A33754 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929C21E89EF6C00A33754 /* main.swift */; };
-		449929CA1E89F3EB00A33754 /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929C91E89F3EB00A33754 /* Anime.swift */; };
+		449929CA1E89F3EB00A33754 /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929C91E89F3EB00A33754 /* Work.swift */; };
 		449929CC1E89F5D500A33754 /* JSONDecodeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929CB1E89F5D500A33754 /* JSONDecodeError.swift */; };
 		449929CE1E89FA4500A33754 /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929CD1E89FA4500A33754 /* JSONDecodable.swift */; };
 		449929D01E89FCD700A33754 /* SearchWorksResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929CF1E89FCD700A33754 /* SearchWorksResponse.swift */; };
@@ -21,6 +21,8 @@
 		449929E11E8A851F00A33754 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449929E01E8A851F00A33754 /* Result.swift */; };
 		44A99CE11E8E129000CF1C30 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A99CE01E8E129000CF1C30 /* Episode.swift */; };
 		44A99CE31E8E26A900CF1C30 /* SearchEpisodesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A99CE21E8E26A900CF1C30 /* SearchEpisodesResponse.swift */; };
+		44A99CE51E8E551200CF1C30 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A99CE41E8E551200CF1C30 /* Record.swift */; };
+		44A99CE81E8E5A9600CF1C30 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A99CE71E8E5A9600CF1C30 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,7 +40,7 @@
 /* Begin PBXFileReference section */
 		449929BF1E89EF6C00A33754 /* AnnictAPIClient */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AnnictAPIClient; sourceTree = BUILT_PRODUCTS_DIR; };
 		449929C21E89EF6C00A33754 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		449929C91E89F3EB00A33754 /* Anime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Anime.swift; sourceTree = "<group>"; };
+		449929C91E89F3EB00A33754 /* Work.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
 		449929CB1E89F5D500A33754 /* JSONDecodeError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecodeError.swift; sourceTree = "<group>"; };
 		449929CD1E89FA4500A33754 /* JSONDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
 		449929CF1E89FCD700A33754 /* SearchWorksResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchWorksResponse.swift; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		449929E01E8A851F00A33754 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		44A99CE01E8E129000CF1C30 /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		44A99CE21E8E26A900CF1C30 /* SearchEpisodesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchEpisodesResponse.swift; sourceTree = "<group>"; };
+		44A99CE41E8E551200CF1C30 /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		44A99CE71E8E5A9600CF1C30 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,14 +119,24 @@
 		449929DD1E8A804F00A33754 /* Response */ = {
 			isa = PBXGroup;
 			children = (
-				449929C91E89F3EB00A33754 /* Anime.swift */,
-				449929CF1E89FCD700A33754 /* SearchWorksResponse.swift */,
+				449929C91E89F3EB00A33754 /* Work.swift */,
+				44A99CE01E8E129000CF1C30 /* Episode.swift */,
+				44A99CE41E8E551200CF1C30 /* Record.swift */,
+				44A99CE71E8E5A9600CF1C30 /* User.swift */,
 				449929CB1E89F5D500A33754 /* JSONDecodeError.swift */,
 				449929CD1E89FA4500A33754 /* JSONDecodable.swift */,
-				44A99CE01E8E129000CF1C30 /* Episode.swift */,
-				44A99CE21E8E26A900CF1C30 /* SearchEpisodesResponse.swift */,
+				44A99CE61E8E5A6000CF1C30 /* SearchResponse */,
 			);
 			name = Response;
+			sourceTree = "<group>";
+		};
+		44A99CE61E8E5A6000CF1C30 /* SearchResponse */ = {
+			isa = PBXGroup;
+			children = (
+				449929CF1E89FCD700A33754 /* SearchWorksResponse.swift */,
+				44A99CE21E8E26A900CF1C30 /* SearchEpisodesResponse.swift */,
+			);
+			name = SearchResponse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,8 +198,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				44A99CE31E8E26A900CF1C30 /* SearchEpisodesResponse.swift in Sources */,
-				449929CA1E89F3EB00A33754 /* Anime.swift in Sources */,
+				449929CA1E89F3EB00A33754 /* Work.swift in Sources */,
+				44A99CE51E8E551200CF1C30 /* Record.swift in Sources */,
 				449929C31E89EF6C00A33754 /* main.swift in Sources */,
+				44A99CE81E8E5A9600CF1C30 /* User.swift in Sources */,
 				449929CC1E89F5D500A33754 /* JSONDecodeError.swift in Sources */,
 				449929D01E89FCD700A33754 /* SearchWorksResponse.swift in Sources */,
 				449929D81E8A659200A33754 /* AnnictRequest.swift in Sources */,

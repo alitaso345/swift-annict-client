@@ -6,7 +6,7 @@ struct Episode : JSONDecodable {
     let title: String
     let recordsCount: Int
     let recordCommentsCount: Int
-    let work: Anime
+    let work: Work
 
     //自分と同じ型を使いたいけどstructだと使えないのでひとまずこれらの値は使わない
     //必要になったらclassにするかどうか考える
@@ -58,6 +58,6 @@ struct Episode : JSONDecodable {
         self.title = title
         self.recordsCount = recordsCount
         self.recordCommentsCount = recordCommentsCount
-        self.work = try Anime(json: workObject)
+        self.work = try Work(json: workObject)
     }
 }
