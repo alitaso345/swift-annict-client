@@ -30,4 +30,20 @@ final class AnnictAPI {
             return nil
         }
     }
+
+    struct SearchRecords : AnnictRequest {
+        typealias Response = SearchRecordsResponse
+
+        var method: HTTPMethod {
+            return .get
+        }
+
+        var path: String {
+            return "/records"
+        }
+
+        var parameters: Any? {
+            return nil
+        }
+    }
 }
