@@ -1,6 +1,6 @@
 struct User :JSONDecodable {
     let id: Int
-    let userName: String
+    let username: String
     let name: String
     let description: String
     let url: String?
@@ -18,7 +18,7 @@ struct User :JSONDecodable {
             throw JSONDecodeError.missingValue(key: "id", actualValue: dictionary["id"])
         }
 
-        guard let userName = dictionary["username"] as? String else {
+        guard let username = dictionary["username"] as? String else {
             throw JSONDecodeError.missingValue(key: "username", actualValue: dictionary["username"])
         }
 
@@ -53,7 +53,7 @@ struct User :JSONDecodable {
         }
 
         self.id = id
-        self.userName = userName
+        self.username = username
         self.name = name
         self.description = description
         self.avatarURL  = avatarURL
