@@ -6,10 +6,10 @@ let token = ProcessInfo.processInfo.environment["ANNICT_ACCESS_TOKEN"]
 print(token!)
 
 let client = AnnictClient(accessToken: token!)
-let request = AnnictAPI.UpdateStatus(
-    workId: 4726,
-    //kind: "stop_watching")
-    kind: "watching")
+let request = AnnictAPI.CreateRecord(
+    episodeId: 89006,
+    comment: "オッ",
+    rating: 3)
 
 client.send(request: request) { result in
     switch result {

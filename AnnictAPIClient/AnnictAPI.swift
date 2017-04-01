@@ -196,4 +196,28 @@ final class AnnictAPI {
             ]
         }
     }
+
+    struct CreateRecord : AnnictRequest {
+        typealias Response = CreateRecordResponse
+
+        let episodeId: Int
+        var comment: String = ""
+        var rating: Int = 0
+
+        var method: HTTPMethod {
+            return .post
+        }
+
+        var path: String {
+            return "/me/records"
+        }
+
+        var parameters: Any? {
+            return [
+                "episode_id": episodeId,
+                "comment": comment,
+                "rating": rating
+            ]
+        }
+    }
 }

@@ -50,8 +50,8 @@ extension AnnictRequest {
     func response(from data: Data, urlResponse: URLResponse) throws -> Response {
         let statusCode = (urlResponse as? HTTPURLResponse)?.statusCode
 
-        //POSTしたとき必ずJSONへの変換でコケるのでその前に処理をする
-        if case (200..<300)? = statusCode, self.method == HTTPMethod.post {
+        //status更新でPOSTしたとき必ずJSONへの変換でコケるのでその前に処理をする
+        if case (200..<300)? = statusCode, self.path == "/me/statuses" {
             return try Response(json: ["statusCode": statusCode])
         }
 

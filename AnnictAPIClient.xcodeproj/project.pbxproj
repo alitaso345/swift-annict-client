@@ -35,6 +35,7 @@
 		44A99CFE1E8E9D1000CF1C30 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A99CFD1E8E9D1000CF1C30 /* Program.swift */; };
 		44A99D001E8E9FB600CF1C30 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A99CFF1E8E9FB600CF1C30 /* Channel.swift */; };
 		44A99D031E8EB0AF00CF1C30 /* UpdateStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A99D021E8EB0AF00CF1C30 /* UpdateStatusResponse.swift */; };
+		44A99D051E8F4F0500CF1C30 /* CreateRecordResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A99D041E8F4F0400CF1C30 /* CreateRecordResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -79,6 +80,7 @@
 		44A99CFD1E8E9D1000CF1C30 /* Program.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
 		44A99CFF1E8E9FB600CF1C30 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		44A99D021E8EB0AF00CF1C30 /* UpdateStatusResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateStatusResponse.swift; sourceTree = "<group>"; };
+		44A99D041E8F4F0400CF1C30 /* CreateRecordResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateRecordResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				44A99D021E8EB0AF00CF1C30 /* UpdateStatusResponse.swift */,
+				44A99D041E8F4F0400CF1C30 /* CreateRecordResponse.swift */,
 			);
 			name = UpdateResponse;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				449929D81E8A659200A33754 /* AnnictRequest.swift in Sources */,
 				44A99CFE1E8E9D1000CF1C30 /* Program.swift in Sources */,
 				44A99CEE1E8E760600CF1C30 /* Activity.swift in Sources */,
+				44A99D051E8F4F0500CF1C30 /* CreateRecordResponse.swift in Sources */,
 				44A99CFA1E8E869500CF1C30 /* Status.swift in Sources */,
 				44A99CF21E8E7D4D00CF1C30 /* Profile.swift in Sources */,
 				449929DA1E8A668D00A33754 /* HTTPMethod.swift in Sources */,
